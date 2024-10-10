@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlor - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="service-container">
+        <h2>Book a Service</h2>
+        <form action="book_service.php" method="POST">
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="haircut">Haircut</option>
+                <option value="massage">Massage</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="facial">Facial</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <h3>Payment Method</h3>
+            <label for="payment">Choose Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="mpesa">M-Pesa</option>
+                <option value="bank_card">Bank Card</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
